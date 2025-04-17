@@ -1,0 +1,233 @@
+html{
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+body{
+ margin-left: 0;
+ margin-right: 0;
+ margin-top: 0;
+}
+header {
+    background-image: url("rect7442.webp");
+    background-position-x: center;
+    display:flex;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+}
+.logo {
+    width: 120px;
+    margin: 1lh auto;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+  }
+  .judul{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10lh;
+    align-items: center;
+    margin: 0;
+  }
+  .slogan{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  nav {
+    background: #f2ae2a    ;
+
+    display: flex;
+    justify-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  nav a {
+    text-decoration: none;
+    color: #662e11    ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+justify-items: center;
+  }
+  .logokecil {
+    opacity: 0;
+    height: 45px;
+    padding-left: 15px;
+    padding-top: 5px;
+    align-items: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px);
+  }
+  .pesan-btn{
+    opacity: 0;
+    justify-content: right;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px);
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid #662e11;
+    display: inline-flexbox;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: 12px;
+    background-color: #f2ae2a;
+    color: #662e11;
+    font-weight: 900;
+  }
+  .pesan-btn:hover{
+    border: 3px solid #662e11;
+    background-color: #662e11;
+    color: #f2ae2a;
+    transition: ease-in 150ms;
+    position: relative;
+  }
+  nav.sticky .pesan-btn {
+    opacity: 1;
+    transform: translateY(0);
+    justify-content: right;
+    position: fixeds;
+    padding: auto;
+    flex: auto;
+  }
+  nav.sticky .logokecil {
+    opacity: 1;
+    transform: translateY(0);
+    justify-content: left;
+    padding: auto;
+    flex: auto;
+  }
+  .nav-ujung-kiri {
+    flex: auto;
+    justify-items: left;
+  }
+  .nav-tengah {
+    flex: auto;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    gap: 40px;
+  }
+nav.sticky .nav-tengah{
+    flex: auto;
+    justify-items: center;
+    align-items: center;
+}
+nav a:hover {
+    transition: ease-in 150ms;
+    background-color: #662e11;
+    color: #f2ae2a;
+}
+nav.sticky nav a {
+    padding-top: 90px;
+}
+/* AKHIR NAVBAR */
+
+/* AWAL SLIDE */
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+    padding-top: 45px;
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 50%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* AKHIR SLIDE */
