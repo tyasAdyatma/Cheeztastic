@@ -1,0 +1,440 @@
+html{
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    scroll-behavior: smooth;
+}
+body{
+ margin-left: 0;
+ margin-right: 0;
+ margin-top: 0;
+}
+header {
+    background-image: url("rect7442.webp");
+    background-position-x: center;
+    display: flex;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+}
+.logo-gede {
+    width: 10vw;
+    margin: 1lh auto;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+  }
+  .judul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    align-items: center;
+    font-size: 10vw;
+    justify-content: center;
+    margin: 0;
+  }
+  .slogan{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  /* AWAL NAVBAR */
+/* === Basic Style === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar {
+    width: 100%;
+    background: #f2ae2a;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: 250ms; 
+  }
+
+
+  /* === Inner nav === */
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  /* Logo kiri */
+  .logo {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  nav.sticky .logo{
+    opacity: 1;
+  }
+  .logo img {
+    height: 40px;
+  }
+  
+  /* Nav tengah */
+  .nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .nav-center a {
+    color: #4e2208;
+    text-decoration: none;
+    font-weight: bold;
+    align-content: center;
+    padding: 12px 12px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .nav-center :hover{
+    background-color: #4e2208;
+    color: #f2ae2a;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    box-shadow: 16px 8px 24px #C2840C,
+    -16px -8px 24px #F5C15D;
+  }
+  
+  /* CTA kanan */
+  .cta {
+    flex: 1;
+    text-align: right;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  
+  a.btn-pesan {
+    padding: 5px 10px;
+    margin-right: 8px;
+    background: #f2ae2a;
+    color: #4e2208;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: default;
+  }
+  .sticky .cta{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .sticky .btn-pesan:hover{
+    border-radius: 6px;
+    padding: 10px 16px;
+    color: #f2ae2a;
+    background: #4e2208;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    box-shadow: 16px 8px 24px #C2840C,
+                -16px -8px 24px #F5C15D;
+    cursor: pointer;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    box-shadow: 0px 2px 25px 0px rgba(0,0,0,0.25);
+    z-index: 10;
+  }
+        
+  
+  /* === Sticky Class === */
+
+  
+  /* === Mobile Nav === */
+  .mobile-nav {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobile-logo {
+    height: 32px;
+  }
+  .mobile-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .burger {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  
+  .mobile-menu.show {
+    display: flex;
+  }
+  .mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .mobile-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .mobile-menu a:hover {
+    color: #f1f1f1;
+  }
+  
+  .mobile-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .mobile-menu {padding-top: 15px;}
+    .mobile-menu a {font-size: 18px;}
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .nav-center,
+    .cta,
+    .logo {
+      display: none;
+    }
+    .mobile-nav {
+      display: flex;
+    }
+  }
+  
+/* AKHIR NAVBAR */
+
+/* AWAL ARTIKEL */
+.produk {
+    padding-top: 75px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.produk h2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 50px;
+}
+.produk-wrapper {
+    display: flex;
+    justify-content: center; /* tengahin horizontal */
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap; /* biar tetap responsif pas layar kecil */
+    padding: 40px 20px;
+  }
+  
+  .produk-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 330px;
+    height: 475px;
+    padding: 20px;
+
+    transition: transform 0.3s ease;
+  }
+  
+  .produk-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 7px 7px 25px #dddddd,
+                -7px -7px 25px #fffaf1;
+  }
+  
+  .produk-card img {
+    width: 100%;
+    height: 55%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .produk-card h3 {
+    font-size: 1.3rem;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    margin: 10px 0 5px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .produk-card p {
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+  }
+  .produk-card h4{
+    color: #4e2208;
+    padding-top: 25px;
+    font-size: 1.5rem;
+  }
+.artikel{
+    padding-top: 95px;
+}
+.proses {
+    padding: 2rem 1rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .image {
+    flex: 2 1 500px;
+  }
+
+  .image img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .content {
+    flex: 1 1 300px;
+  }
+
+  .tagline {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #f59e0b;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .image, .content {
+        flex: unset;
+        width: 100%;
+      }
+
+      .content {
+        padding: 0;
+      }
+  }
+  .bungkus-tengah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* bikin tinggi penuh layar */
+  }
+  
+  .tombol-keranjang {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 240px;
+    padding: 12px 24px;
+    background-color: #f59e0b;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .tombol-keranjang .ikon {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  
+  /* Efek cahaya bundar saat hover */
+  .tombol-keranjang::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: 0;
+  }
+  
+  .tombol-keranjang:hover::before {
+    width: 300%;
+    height: 300%;
+  }
+  
+  .tombol-keranjang:hover {
+    transform: scale(1.05);
+    color: white;
+  }
+  
+  .tombol-keranjang:hover .ikon {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .tombol-keranjang:hover .teks {
+  transform: translateX(-6px);
+}
+  /* Biar teks dan ikon di atas efek bundar */
+  .tombol-keranjang .teks,
+  .tombol-keranjang .ikon {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+
+.contact {
+    background-color: #f59e0b;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+.contact h2 {
+    padding-bottom: 30px;
+}
+.contact p {
+    padding-top: 5px;
+}
+.contact h5 {
+    padding-top: 25px;
+}

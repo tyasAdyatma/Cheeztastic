@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheeztastic - Cheese Roll & Cheesecuit</title>
+  <link rel="icon" type="image/x-icon" href="LOGO Cheeztastic.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- AWAL HEADER -->
+  <header>
+    <h1 class="judul">Cheeztastic</h1>
+    <h3 class="slogan">🧀 Lelehkan lidahmu, rasakan kejunya!</h3>
+
+    <img src="LOGO Cheeztastic.svg" alt="Logo Chstic" class="logo-gede">
+  </header>
+  <!-- HEADER AKHIR -->
+
+  <!-- AWAL NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo (hidden dulu) -->
+      <div class="logo">
+        <img src="LOGO Cheeztastic.svg" alt="Cheeztastic" />
+      </div>
+  
+      <!-- Judul tengah -->
+      <div class="nav-center">
+        <a href="#produk">Produk Kami</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#cerita">Cerita Kami</a>
+      </div>
+  
+      <!-- Tombol "Pesan Sekarang!" (hidden dulu) -->
+      <div class="cta">
+        <a href="https://wa.link/ebpkvz" class="btn-pesan">Pesan Sekarang!</a>
+      </div>
+  
+      <!-- Mobile View -->
+      <div class="mobile-nav">
+        <img src="LOGO Cheeztastic.svg" alt="cheeztastic" class="mobile-logo" />
+        <span class="mobile-title">Cheeztastic</span>
+        <div class="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#produk">Produk Kami</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#cerita">Cerita Kami</a>
+        <a href="#pesan">Pesan Sekarang!</a>
+      </div>
+
+    </div>
+  </nav>
+  <!-- AKHIR NAVBAR -->
+
+
+
+
+
+
+  
+
+  <section class="produk" id="produk">
+    <h2>Apa yang Kami Tawarkan?</h2>
+
+    <section class="produk-wrapper">
+      <div class="produk-card">
+        <img src="Cheesecuit (Your Story)_20250415_092353_0000.png" alt="Cheese Roll">
+        <h3>Cheese Roll</h3>
+        <p>Snack gulung keju yang crispy di luar dan lumer di dalam!😋</p>
+        <h4 class="harga">Rp10.000</h4>
+      </div>
+    
+      <div class="produk-card">
+        <img src="Cheesecuit (Your Story)_20250415_092220_0000.png" alt="CheeseCuit">
+        <h3>CheeseCuit</h3>
+        <p>Dessert keju gurih, creamy, lembut...🤤  Cocok deh buat ngemil!</p>
+        <h4 class="harga">Rp10.000</h4>
+      </div>
+    </section>
+
+      <p style="padding: 6px; text-align: center;">Gak cuma jual produk, Cheeztastic juga nawarin pengalaman makan keju yang asik!!</p>
+      <p style="text-align: center;"> Gak booring kaya hubunganmu sama dia😙</p>
+  </section>
+
+  <div class="bungkus-tengah">
+    <a href="https://wa.link/ebpkvz" class="tombol-keranjang">
+      <span class="teks">Pesan Sekarang!</span>
+      <i class="fas fa-shopping-cart ikon"></i>
+    </a>
+  </div>
+
+  <section class="artikel">
+    <section class="proses">
+      <div class="container">
+        <div class="image">
+          <img src="Untitled design (1).webp" alt="Bahan Berkualitas">
+        </div>
+        <div class="content">
+          <div class="tagline">🧀 Dibuat dari Bahan Berkualitas</div>
+          <div class="description">
+            Di Cheeztastic, kami percaya kalau rasa terbaik selalu dimulai dari bahan yang berkualitas. 🍞🧀<br>
+            Kami pilih keju terbaik, bahan-bahan segar, dan pastinya yang aman buat kamu nikmati. Bukan cuma soal enak, tapi juga soal tanggung jawab kami buat kasih yang terbaik 💯
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="proses">
+      <div class="container">
+        <div class="image">
+          <img src="0004.jpg" alt="Diolah Sepenuh Hati">
+        </div>
+        <div class="content">
+          <div class="tagline">🤲 Diolah Dengan Sepenuh Hati</div>
+          <div class="description">
+            Bagi kami, proses bikin camilan itu lebih dari sekadar rutinitas—ini soal rasa, perhatian, dan ketulusan 💛<br>
+            Mulai dari dapur sampai ke tangan kamu, semua kami kerjakan dengan penuh cinta dan ketelitian 🧑‍🍳✨ Karena rasa yang tulus pasti selalu terasa.
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="proses">
+      <div class="container">
+        <div class="image">
+          <img src="0002.jpg" alt="Diracik Dengan Perhatian">
+        </div>
+        <div class="content">
+          <div class="tagline">🧂 Diracik Dengan Penuh Perhatian</div>
+          <div class="description">
+            Dari komposisi bahan sampai rasa akhir, semua kami racik dengan penuh perhatian 🎯<br>
+            Kami tahu, detail sekecil apapun bisa kasih perbedaan besar. Setiap Cheese Roll dan CheeseCuit dibuat konsisten, nikmat, dan bikin nagih 😋
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="contact" id="tentang">
+    <h2>Kontak Kami</h2>
+    <p>Instagram: @cheeztastic</p>
+    <p>WhatsApp: 0896-3341-1128</p>
+    <p>Jl. Srikanji No.04 Cideng Indah, Kec Kedawung, Kab. Cirebon</p>
+    <h5 class="copy">Copyright © 2025 - Cheeztastic.web.id</h5>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
